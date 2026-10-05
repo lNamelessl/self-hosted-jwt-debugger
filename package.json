@@ -1,0 +1,26 @@
+{
+  "name": "self-hosted-jwt-debugger",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Self-hosted jwt.io-style JWT debugger. 100% client-side: tokens never leave the browser.",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc --noEmit && vite build && node scripts/check-external-refs.mjs",
+    "preview": "vite preview",
+    "fixtures": "node scripts/make-fixtures.mjs"
+  },
+  "dependencies": {
+    "jose": "6.2.12",
+    "jwt-decode": "4.0.0",
+    "react": "19.3.0",
+    "react-dom": "19.3.0"
+  },
+  "devDependencies": {
+    "@types/react": "19.2.7",
+    "@types/react-dom": "19.2.3",
+    "@vitejs/plugin-react": "6.1.2",
+    "typescript": "~5.9.3",
+    "vite": "8.3.2"
+  }
+}

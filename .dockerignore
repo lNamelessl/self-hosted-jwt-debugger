@@ -1,0 +1,9 @@
+node_modules
+dist
+fixtures
+.git
+.gitignore
+.dockerignore
+README.md
+TEMPLATE_OVERVIEW.md
+*.local
