@@ -103,3 +103,5 @@ Dockerfile      multi-stage, digest-pinned
 scripts/        check-external-refs.mjs, make-fixtures.mjs
 railway.json    Dockerfile builder, /health healthcheck, ON_FAILURE restart
 ```
+
+> Local evidence: 25/25 headless-browser checks, zero cross-origin requests; SSRF battery in README.
