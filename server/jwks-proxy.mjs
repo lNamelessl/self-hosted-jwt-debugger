@@ -124,8 +124,10 @@ function addressBlocked(ip) {
 // ------------------------------------------------------------ resolve + fetch
 
 async function resolveHost(hostname) {
-  if (net.isIP(hostname)) return [hostname];
-  const records = await dns.lookup(hostname, { all: true, verbatim: true });
+  // WHATWG URL keeps brackets on IPv6 literals ("[::1]") — strip them for isIP/lookup.
+  const h = hostname.replace(/^\[/, '').replace(/\]$/, '');
+  if (net.isIP(h)) return [h];
+  const records = await dns.lookup(h, { all: true, verbatim: true });
   return records.map((r) => r.address);
 }
 
