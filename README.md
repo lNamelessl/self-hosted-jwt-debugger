@@ -4,7 +4,7 @@ A team-oriented, self-hosted alternative to jwt.io's debugger: paste a JSON Web 
 inspect its header/payload, watch expiry countdowns, and **verify signatures locally**.
 Everything runs in your browser — **tokens never leave your deployment**.
 
-[![Deploy on Railway](https://railway.com/button.svg)](https://railway.app/new?github_url=https://github.com/lNamelessl/self-hosted-jwt-debugger)
+[![Deploy on Railway](https://railway.com/button.svg)](https://railway.com/deploy/jwt-debugger)
 
 ## Why
 
